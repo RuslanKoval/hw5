@@ -19,8 +19,6 @@ $calc = new Calculate();
 $test = $calc->eq_roots(2, 6, 1);
 $rect = $calc->rectangle(10, 20);
 $round = $calc->round(5);
-
-
-$trap = $calc->trapezoid(2, 2, 6);
+$trap = $calc->trapezoid(2, 4, 6);
 
 print_r($trap);

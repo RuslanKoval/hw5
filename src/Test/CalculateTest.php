@@ -51,7 +51,7 @@ class CalculateTest extends \PHPUnit_Framework_TestCase
         return [
             [16, 3, 5, 4],
             [12, 2, 2, 6],
-            [12, 2, 4, 6],
+            [18, 2, 4, 6],
         ];
     }
 
