@@ -80,6 +80,6 @@ class CalculateTest extends \PHPUnit_Framework_TestCase
         $mock->expects($this->once())
             ->method('scripRow')
             ->will($this->returnValue(4));
-        $this->assertEquals($mock->getFor(4), 4);
+        $this->assertEquals($mock->scripRow(4), 4);
     }
 }
