@@ -68,8 +68,8 @@ class CalculateTest extends \PHPUnit_Framework_TestCase
     public function addRound()
     {
         return [
-            [200, 5],
-            [78.5, 4],
+            [200.96, 8],
+            [12.56, 2],
             [78.5, 5],
         ];
     }
