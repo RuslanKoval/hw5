@@ -55,4 +55,22 @@ class CalculateTest extends \PHPUnit_Framework_TestCase
         ];
     }
 
+    /**
+     * @dataProvider addRound
+     */
+    public function testRound($ex, $r)
+    {
+        $calc = new Calculate;
+        $this->assertEquals($ex, $calc->round($r));
+        $this->assertTrue(true);
+    }
+
+    public function addRound()
+    {
+        return [
+            [200, 5],
+            [78.5, 4],
+            [78.5, 5],
+        ];
+    }
 }
