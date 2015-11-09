@@ -73,4 +73,13 @@ class CalculateTest extends \PHPUnit_Framework_TestCase
             [78.5, 5],
         ];
     }
+
+    public function testUsingMock()
+    {
+        $mock = $this->getMock('Layer\Calculate');
+        $mock->expects($this->once())
+            ->method('scripRow')
+            ->will($this->returnValue(4));
+        $this->assertEquals($mock->getFor(4), 4);
+    }
 }

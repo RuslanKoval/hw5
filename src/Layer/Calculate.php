@@ -75,4 +75,21 @@ class Calculate
     {
         return (1 / 2) * ($a + $b) * $h;
     }
+
+    /**
+     * @param $a
+     * @param $b
+     * @return int
+     */
+    function scripRow($a, $b)
+    {
+        $summ = 0;
+
+        for($i = $a; $i <= $b; $i++)
+        {
+            $summ += $i;
+        }
+
+        return $summ;
+    }
 }
